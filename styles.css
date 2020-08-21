@@ -1,0 +1,267 @@
+.space {
+    width: 100%;
+    height: 150px;
+}
+
+#logo {
+    height: 112px;
+}
+
+#txtimages {
+    position: relative;
+    margin-left: calc(50% + 80px);
+    bottom: 36px;
+    font: 16px roboto-regular, arial, sans-serif;
+    color: rgb(75, 75, 245);
+}
+
+#gimage {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.center {
+    width: 50%;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.center, #search, .center form {
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 750px;
+}
+
+#search {
+    display: block;
+    margin: auto;
+    width: 85%;
+    border: 1px solid lightgray;
+    border-radius: 24px;
+    height: 40px;
+    min-width: 400px;
+    max-width: 750px;
+}
+
+#box {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    height: 30px;
+    text-indent: 10px;
+    font-size: 16px;
+    fill: transparent;
+    border: 0px;
+    border-color: transparent;
+    bottom: 5px;
+}
+
+#glass {
+    display: inline-block;
+    fill: rgb(163, 163, 163);
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding-top: 10px;
+    margin-left: 4%;
+}
+
+#sglass {
+    float: right;
+    margin-right: 3%;
+    fill: rgba(77, 139, 255, 0.993);
+    width: 24px;
+    height: 24px;
+    position: relative;
+    padding-top: 10px;
+    bottom: 2px;
+}
+
+#sglass>button, #sglass button:active {
+    border: 0px;
+    outline: transparent;
+    cursor: pointer;
+}
+
+#search:hover {
+    box-shadow: 0 1px 6px 0 rgba(39, 39, 39, 0.28);
+    border-color: rgba(223, 225, 229, 0)
+}
+
+#box:focus {
+    outline: transparent;
+}
+
+#submit, #lucky {
+    display: inline-block;
+    margin-top: 25px;
+    width: 150px;
+    padding: 6px;
+    fill: gray;
+    border: 0px;
+    height: 36px;
+    font-size: 16px;
+    color: gray;
+    border-radius: 3px;
+}
+
+#submit:hover, #lucky:hover {
+    color: rgb(39, 39, 39);
+    border: 1px solid lightgray;
+}
+
+#submit {
+    margin-left: calc(50% - 160px);
+}
+
+#lucky {
+    margin-left: 10px
+}
+
+.links a {
+    float: right;
+    margin-right: 20px;
+    text-decoration-line: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+.links a:hover {
+    text-decoration-line: underline;
+}
+
+#title {
+    font-size: 20px;
+    color: #d93025;
+    margin: 25px 45px;
+    font-family: Arial, sans-serif;
+}
+
+.line {
+    border-bottom: 1px solid rgb(235, 235, 235);
+    margin: 0 0;
+    width: 100%;
+    padding: 0;
+}
+
+#adform {
+    margin: 40px 2% 0 45px;
+}
+
+.criteria {
+    margin: 10px 0 10px 0;
+    height: 30px;
+    clear: both;
+}
+
+.header {
+    margin: 20px 0 15px 0;
+}
+
+.header .query {
+    font-size: 16px;
+}
+
+#hasbox {
+    width: 44%;
+    display: inline-block;
+    min-width: 165px;
+}
+
+.query, .asbox, .explain {
+    vertical-align: middle;
+}
+
+.query {
+    width: 16%;
+    min-width: 170px;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.asbox {
+    width: 45%;
+    display: inline-block;
+    min-width: 170px;
+}
+
+.asbox>input {
+    width: 95%;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    text-align: left;
+    border-radius: 1px;
+    border: 1px solid #c0c0c0;
+}
+
+.asbox>input:focus {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.274);
+    border: 1px solid rgb(92, 154, 253);
+    outline: none;
+}
+
+.header .explain {
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(136, 136, 136);
+}
+
+.explain {
+    display: inline-block;
+    width: 32%;
+    line-height: 16px;
+    font-size: 11px;
+    font-family: monospace;
+    color: rgb(100, 99, 99);
+    vertical-align: middle;
+}
+
+.explain span {
+    white-space: pre;
+}
+
+#adsubmit {
+    background-color: rgb(53, 122, 233);
+    background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
+    float: right;
+    min-width: 120px;
+    height: 30px;
+    margin: 10px 10px 10px 0;
+    padding: 0 10px;
+    border: 1px solid rgb(47, 91, 183);
+    border-radius: 2px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+@media (max-width: 1020px) {
+    .hexplain, .explain {
+        display: none !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .query, .asbox {
+        display: block;
+        margin: 20px 0 15px 0;
+        width: 95%;
+    }
+
+    .criteria {
+        display: block;
+        margin: 0 0 40px 0;
+    }
+
+    #hasbox {
+        display: none !important;
+    }
+}
