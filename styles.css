@@ -99,12 +99,13 @@
     margin-top: 25px;
     width: 150px;
     padding: 6px;
-    fill: gray;
+    fill: rgb(158, 158, 158);
     border: 0px;
     height: 36px;
     font-size: 16px;
     color: gray;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 #submit:hover, #lucky:hover {
